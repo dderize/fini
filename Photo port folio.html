@@ -1,0 +1,193 @@
+<!--Font Awesome CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="Photo port folio.css">
+<link rel="stylesheet" href="stylee.css">
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expr</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Lora', serif; /* Corrected font family */
+            background-image: url("https://media.giphy.com/media/xWC0BCZtkDxE869erD/giphy.gif?cid=790b7611uqqxoy7im7t636d08p9uxwzkrxonp7e8cneltzug&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px; /* Adjust the height as needed */
+            background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+            transition: background-color 0.3s ease; /* Smooth transition */
+            z-index: 9999; /* Ensure it's above other elements */
+            display: flex; /* Make the navbar horizontal */
+            justify-content: center; /* Center the navbar horizontally */
+            align-items: center; /* Center the navbar vertically */
+            padding-top: 10px; /* Add padding to the top */
+            padding-bottom: 10px; /* Add padding to the bottom */
+        }
+
+        .navbar-container:hover {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background when hovered */
+        }
+
+        .navbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* Make the navbar horizontal */
+            z-index: 10000; /* Ensure it's above the hiding space */
+        }
+
+        .navbar li {
+            margin: 0 30px; /* Adjust the margin as needed */
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: rgb(251, 251, 251);
+            font-size: 16px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown li {
+            padding: 10px;
+        }
+
+        .dropdown li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+        .navbar li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-container">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Comprendre</a>
+                <ul class="dropdown">
+                    <li><a href="#">Semestre 1</a></li>
+                    <li><a href="#">Semestre 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Concevoir</a>
+                <ul class="dropdown">
+                    <li><a href="#">Semestre 1</a></li>
+                    <li><a href="#">Semestre 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Exprimer</a>
+                <ul class="dropdown">
+                    <li><a href="#">Semestre2</a></li>
+                    <li><a href="#">Semestre2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Developer</a>
+                <ul class="dropdown">
+                    <li><a href="#">Semestre 1</a></li>
+                    <li><a href="#">Semestre 2</a></li>
+                </ul>
+            </li>
+            <li><a href="file:///C:/Users/59069/OneDrive/Bureau/BUT1MMI/INTEGRATION/portfolio.html#">Contacte</a></li>
+        </ul>
+    </div>
+
+    <!-- slider -->
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(img2.jpg);">
+                <div class="content">
+                    <div class="name">Switzerland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img1.png);">
+                <div class="content">
+                    <div class="name">Finland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+                <div class="content">
+                    <div class="name">Iceland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img3.jpg);">
+                <div class="content">
+                    <div class="name">Australia</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img4.jpg);">
+                <div class="content">
+                    <div class="name">Netherland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img5.jpg);">
+                <div class="content">
+                    <div class="name">Ireland</div>
+                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <button>See More</button>
+                </div>
+            </div
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+
+        next.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').appendChild(items[0]);
+        });
+
+        prev.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').prepend(items[items.length - 1]);
+        });
+    </script>
+
+</body>
+
+</html>
+
